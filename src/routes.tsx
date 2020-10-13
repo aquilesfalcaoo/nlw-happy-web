@@ -1,16 +1,16 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 import Landing from './pages/Landing';
 import OrphanagesMap from './pages/OrphanagesMap';
 
 function Routes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route path="/" exact component={Landing} />
                 <Route path="/app" component={OrphanagesMap} />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
